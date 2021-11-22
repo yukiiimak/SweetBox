@@ -365,21 +365,6 @@ ul li {
   list-style: none;
 }
 
-.container-grid {
-  display: grid;
-  grid-template-areas: ". grid-content .";
-  grid-template-columns: 15px auto 15px;
-  height: 100vh;
-}
-@media (min-width: 1200px) {
-  .container-grid {
-    grid-template-columns: auto 1200px auto;
-  }
-}
-.container-grid > div {
-  grid-area: grid-content;
-}
-
 /* =============
     Typography
 ============= */
@@ -428,3 +413,17 @@ textarea {
 /* =============
     Footer
 ============= */
+#logoani {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: auto 75vw auto;
+  grid-template-areas: ". logo .";
+}
+#logoani > div {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
