@@ -1,0 +1,16 @@
+#logoani {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000;
+    display: flex;
+    align-items: flex-end;
+
+    >div{
+        width: 100%;
+    }
+
+    svg{
+        overflow: hidden;
+    }
+}
