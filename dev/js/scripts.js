@@ -8,7 +8,7 @@ const mainTL = gsap.timeline();
 
 function TL(){
     const tl =gsap.timeline();
-    tl.to("#box", {duration:.5, y:"+=710", ease:"none"}); 
+    tl.to("#box", {duration:5, y:"+=710", rotate:-40, ease:"none"}); 
     return tl;
 }
 
