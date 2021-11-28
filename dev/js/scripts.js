@@ -1,11 +1,20 @@
-// import { gsap } from "gsap";
-// import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+import { gsap } from "gsap";
+import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 
-// // const mainTL = gsap.timeline(); 
+gsap.registerPlugin(MotionPathPlugin);
+gsap.set("#box", {y:"-=710", transformOrigin:"top"});
 
-// // mainTL.add(TL())
+const mainTL = gsap.timeline(); 
 
-// MotionPathPlugin.create();
+function TL(){
+    const tl =gsap.timeline();
+    tl.to("#box", {duration:.5, y:"+=710", ease:"none"}); 
+    return tl;
+}
+
+mainTL.add(TL())
+
+MotionPathPlugin.create();
 
 
 
