@@ -1,11 +1,11 @@
-import { gsap } from "gsap";
-import { GSDevTools } from "gsap/GSDevTools";
-import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+// import { gsap } from "gsap";
+// import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 
-const mainTL = gsap.timeline(); 
+// // const mainTL = gsap.timeline(); 
 
-GSDevTools.create();
-MotionPathPlugin.create();
+// // mainTL.add(TL())
+
+// MotionPathPlugin.create();
 
 
 
