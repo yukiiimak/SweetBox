@@ -3,6 +3,7 @@ import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 
 gsap.registerPlugin(MotionPathPlugin);
 gsap.set("#box", {y:"-=710", transformOrigin:"top"});
+gsap.set("#piping-bag", {rotate:50});
 
 const mainTL = gsap.timeline(); 
 
