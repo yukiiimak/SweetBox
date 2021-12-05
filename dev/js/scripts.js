@@ -1,7 +1,8 @@
 import { gsap } from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
-gsap.registerPlugin(MotionPathPlugin);
+gsap.registerPlugin(MotionPathPlugin, MorphSVGPlugin);
 gsap.set("#box", {y:"-=710", transformOrigin:"top"});
 
 const mainTL = gsap.timeline(); 
@@ -30,6 +31,7 @@ mainTL.add(TL())
 // .add(pipingbag())
 
 MotionPathPlugin.create();
+MorphSVGPlugin.create();
 
 
 
