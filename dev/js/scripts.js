@@ -1,8 +1,8 @@
 import { gsap } from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
-import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
+// import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
-gsap.registerPlugin(MotionPathPlugin, MorphSVGPlugin);
+gsap.registerPlugin(MotionPathPlugin);
 gsap.set("#box", {y:"-=710", transformOrigin:"top"});
 
 const mainTL = gsap.timeline(); 
@@ -13,7 +13,7 @@ function TL(){
     // tl.to("#box", {duration:1.5, rotate:0, ease:"none"}, "upright");
     // tl.to("#cover", {duration:2, rotate:-35, delay:.3, ease:"none"}, "fall-tilt");
     // tl.to("#cover", {duration:1.5, rotate:0, ease:"none"}, "upright"); 
-    tl.to("#piping-bag", {duration:20, motionPath:{path:"#motion-path", align:"#motion-path", autoRotate: -90}, ease: "sine.inOut"}); 
+    tl.to("#piping-bag", {duration:20, motionPath:{path:"#motion-path", align:"#motion-path", autoRotate: -100, alignOrigin: [0.5, 0.5]}, ease: "sine.inOut"}); 
     return tl;
 }
 
@@ -31,7 +31,7 @@ mainTL.add(TL())
 // .add(pipingbag())
 
 MotionPathPlugin.create();
-MorphSVGPlugin.create();
+// MorphSVGPlugin.create();
 
 
 
