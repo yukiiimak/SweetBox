@@ -427,9 +427,6 @@ textarea {
   align-items: center;
   height: 100%;
 }
-#logoani g #piping-bag {
-  display: none;
-}
 #logoani g #squeezed-piping-bag {
   display: none;
 }
@@ -467,8 +464,5 @@ textarea {
   display: none;
 }
 #logoani g #thin-frosting-4 {
-  display: none;
-}
-#logoani g #motion-path {
   display: none;
 }
