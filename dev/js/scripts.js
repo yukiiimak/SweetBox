@@ -1,11 +1,11 @@
 import { gsap } from "gsap";
+// import { GSDevTools } from "gsap/GSDevTools";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 // import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
 gsap.registerPlugin(MotionPathPlugin);
-gsap.set("#box", {y:"-=710", transformOrigin:"top"});
-gsap.set("#piping-bag", {x:"-=400", y:"-=50", transformOrigin:"center"});
-gsap.set("#piping-bag", {y:"+=50", transformOrigin:"end"});
+gsap.set("#box", {y:"-=710", x:"-=50", transformOrigin:"top"});
+gsap.set("#piping-bag", {x:"-=400", y:"-=50", scale: 0.9, transformOrigin:"center"});
 
 const mainTL = gsap.timeline(); 
 
@@ -15,12 +15,9 @@ function TL(){
     tl.to("#box", {duration:1.5, rotate:0, ease:"none"}, "upright");
     tl.to("#cover", {duration:2, rotate:-35, delay:.3, ease:"none"}, "fall-tilt");
     tl.to("#cover", {duration:1.5, rotate:0, ease:"none"}, "upright"); 
-    tl.to("#piping-bag", {duration:20, delay:1, motionPath:{path:"#motion-path", align:"#motion-path", autoRotate: -100, alignOrigin: [0.5, 0.5]}, ease: "sine.inOut"}, "fall-tilt"); 
+    tl.to("#piping-bag", {duration:20, delay:1.3, motionPath:{path:"#motion-path", align:"#motion-path", autoRotate: -100, alignOrigin: [0.5, 0.5]}, ease: "sine.inOut"}, "fall-tilt"); 
     return tl;
 }
-
-// ask on greensock forum to see if there is a code for rotating the piping bag how i want it 
-// second option is to create a function of just the piping bag and manually rotating it when i want it to
 
 mainTL.add(TL())
 
