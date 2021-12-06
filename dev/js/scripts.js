@@ -16,6 +16,7 @@ function TL(){
     tl.to("#cover", {duration:2, rotate:-60, delay:.3, ease:"none"}, "fall-tilt");
     tl.to("#cover", {duration:3.3, rotate:0, ease:"none"}, "upright"); 
     tl.to("#piping-bag", {duration:17, delay:1.3, motionPath:{path:"#motion-path", align:"#motion-path", alignOrigin:[0.5, 0.5], autoRotate:-100}, ease: "sine.inOut"}, "fall-tilt");
+    // tl.from("#frosting-1", )
 
     return tl;
 }
