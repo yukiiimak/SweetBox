@@ -18,8 +18,10 @@ function TL(){
     tl.to("#piping-bag", {duration:17, delay:1.3, motionPath:{path:"#motion-path", align:"#motion-path", alignOrigin:[0.5, 0.5], autoRotate:-100}, ease: "sine.inOut"}, "fall-tilt");
     tl.from("#frosting-1", {duration:1.5, delay:6.8, autoAlpha:0}, "upright");
     tl.from("#frosting-2", {duration:1.7, delay:7.7, autoAlpha:0}, "upright");
-    tl.from("#frosting-3", {duration:2.2, delay:8.8, autoAlpha:0}, "upright");
+    tl.from("#frosting-3", {duration:2.3, delay:8.8, autoAlpha:0}, "upright");
     tl.from("#frosting-4", {duration:1.4, delay:9.8, autoAlpha:0}, "upright");
+    tl.from("#box-word", {duration:1, delay:13, autoAlpha:0}, "upright");
+    tl.from("#sweet-word", {duration:1, delay:13.5, autoAlpha:0}, "upright");
     return tl;
 }
 
