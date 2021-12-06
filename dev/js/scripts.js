@@ -28,7 +28,7 @@ function TL(){
 
 function thinfrostings(){
     const tl =gsap.timeline();
-    tl.to("#thin-frosting-1", {duration:2, delay:3.9, motionPath:{path:"#thin-frosting-motion-path-1", align:"self"}, ease:"none"}, "fall-tilt")
+    tl.to("#thin-frosting-1", {duration:2, delay:3.9, motionPath:{path:"#thin-frosting-motion-path-1", align:"#thin-frosting-motion-path-1"}, ease:"none"}, "fall-tilt")
     // tl.to("#thin-frosting-1", {duration:2, delay:3.9, motionPath:{path:"#thin-frosting-motion-path-1", align:"#thin-frosting-motion-path-1", alignOrigin:[0.5, 0], autoRotate:-80}, ease:"none"}, "fall-tilt")
 
     // tl.to("#thin-frosting-2", {duration:2, delay:4.6, motionPath:{path:"#thin-frosting-motion-path-2", align:"#thin-frosting-motion-path-2", alignOrigin:[0.5, 0], autoRotate:-80}, ease:"none"}, "fall-tilt"); 
@@ -39,10 +39,12 @@ function thinfrostings(){
     // tl.to("#thin-frosting-3", {duration:3, delay:9, motionPath:{path:"#thin-frosting-motion-path-3-2", align:"#thin-frosting-motion-path-3-2", alignOrigin:[0.5, 0.5], autoRotate:100}, ease:"none"}, "fall-tilt");
     // tl.to("#thin-frosting-4", {duration:3, delay:9, motionPath:{path:"#thin-frosting-motion-path-4-2", align:"#thin-frosting-motion-path-4-2", alignOrigin:[0.5, 0.5], autoRotate:100}, ease:"none"}, "fall-tilt");
     .to("#thin-frosting-1", {duration:2, morphSVG:"#top-ribbon-right", stroke:"#fff"}, "morph"); 
-//     tl.to("#thin-frosting-2", {duration:2, morphSVG:"#bottom-ribbon-right"}, "morph"); 
-//     tl.to("#thin-frosting-3", {duration:2, morphSVG:"#bottom-ribbon-left"}, "morph"); 
-//     tl.to("#thin-frosting-4", {duration:2, morphSVG:"#top-ribbon-left"}, "morph"); 
+//     .to("#thin-frosting-2", {duration:2, morphSVG:"#bottom-ribbon-right", stroke:"#fff"}, "morph")
+//     .to("#thin-frosting-3", {duration:2, morphSVG:"#bottom-ribbon-left", stroke:"#fff"}, "morph")
+//     .to("#thin-frosting-4", {duration:2, morphSVG:"#top-ribbon-left", stroke:"#fff"}, "morph"); 
 }
+
+// for morphSVG: make copies of thin frosting and put them on top of box, fade away the originals while fading in the copies, and morph copies into ribbons
 
 mainTL.add(TL())
 .add(thinfrostings())
