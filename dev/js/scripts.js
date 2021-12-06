@@ -1,7 +1,7 @@
 import { gsap } from "gsap";
-// import { GSDevTools } from "gsap/GSDevTools";
+import { GSDevTools } from "gsap/GSDevTools";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
-// import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
+import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
 gsap.registerPlugin(MotionPathPlugin);
 gsap.set("#box", {y:"-=710", transformOrigin:"top"});
@@ -40,9 +40,9 @@ function thinfrostings(){
 mainTL.add(TL())
 .add(thinfrostings())
 
-// GSDevTools.create();
+GSDevTools.create();
 MotionPathPlugin.create();
-// MorphSVGPlugin.create(); 
+MorphSVGPlugin.create(); 
 
 
 
