@@ -5,6 +5,7 @@ import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 gsap.registerPlugin(MotionPathPlugin);
 gsap.set("#box", {y:"-=710", transformOrigin:"top"});
 gsap.set("#piping-bag", {x:"-=400", y:"-=50", transformOrigin:"center"});
+gsap.set("#piping-bag", {y:"+=50", transformOrigin:"end"});
 
 const mainTL = gsap.timeline(); 
 
