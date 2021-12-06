@@ -22,6 +22,7 @@ function TL(){
     tl.from("#frosting-4", {duration:1.4, delay:9.8, autoAlpha:0}, "upright");
     tl.from("#box-word", {duration:1, delay:13, autoAlpha:0}, "upright");
     tl.from("#sweet-word", {duration:1, delay:13.5, autoAlpha:0}, "upright");
+    tl.to("#piping-bag", {y:"+=100", ease:"none"});
     return tl;
 }
 
