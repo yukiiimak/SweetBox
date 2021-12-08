@@ -427,6 +427,33 @@ textarea {
   align-items: center;
   height: 100%;
 }
+#logoani g #motion-path {
+  display: none;
+}
+#logoani g #thin-frosting-motion-path-1 {
+  display: none;
+}
+#logoani g #thin-frosting-motion-path-1-2 {
+  display: none;
+}
+#logoani g #thin-frosting-motion-path-2 {
+  display: none;
+}
+#logoani g #thin-frosting-motion-path-2-2 {
+  display: none;
+}
+#logoani g #thin-frosting-motion-path-3 {
+  display: none;
+}
+#logoani g #thin-frosting-motion-path-3-2 {
+  display: none;
+}
+#logoani g #thin-frosting-motion-path-4 {
+  display: none;
+}
+#logoani g #thin-frosting-motion-path-4-2 {
+  display: none;
+}
 #logoani g #bottom-ribbon-right {
   display: none;
 }
