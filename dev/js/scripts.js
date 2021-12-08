@@ -11,17 +11,17 @@ const mainTL = gsap.timeline();
 
 function TL(){
     const tl =gsap.timeline();
-    tl.to("#box", {duration:2, y:"+=710", rotate:-40, ease:"none"}, "fall-tilt"); 
-    tl.to("#box", {duration:3.3, rotate:0, ease:"none"}, "upright");
-    tl.to("#cover", {duration:2, rotate:-60, delay:.3, ease:"none"}, "fall-tilt");
-    tl.to("#cover", {duration:3.3, rotate:0, ease:"none"}, "upright"); 
+    tl.to("#box", {duration:2, y:"+=710", rotate:-40, ease:"none"}, "fall-tilt")
+    .to("#box", {duration:3.3, rotate:0, ease:"none"}, "upright");
+    tl.to("#cover", {duration:2, rotate:-60, delay:.3, ease:"none"}, "fall-tilt")
+    .to("#cover", {duration:3.3, rotate:0, ease:"none"}, "upright"); 
     tl.to("#piping-bag", {duration:17, delay:1.3, motionPath:{path:"#motion-path", align:"#motion-path", alignOrigin:[0.5, 0.5], autoRotate:-100}, ease: "sine.inOut"}, "fall-tilt");
-    tl.from("#frosting-1", {duration:1.5, delay:6.8, autoAlpha:0}, "upright");
-    tl.from("#frosting-2", {duration:1.7, delay:7.7, autoAlpha:0}, "upright");
-    tl.from("#frosting-3", {duration:2.4, delay:8.9, autoAlpha:0}, "upright");
-    tl.from("#frosting-4", {duration:1.4, delay:9.8, autoAlpha:0}, "upright");
-    tl.from("#box-word", {duration:1, delay:13, autoAlpha:0}, "upright");
-    tl.from("#sweet-word", {duration:1, delay:13.5, autoAlpha:0}, "upright");
+    tl.from("#frosting-1", {duration:1.5, delay:6.8, autoAlpha:0}, "upright")
+    .from("#frosting-2", {duration:1.7, delay:7.7, autoAlpha:0}, "upright")
+    .from("#frosting-3", {duration:2.4, delay:8.9, autoAlpha:0}, "upright")
+    .from("#frosting-4", {duration:1.4, delay:9.8, autoAlpha:0}, "upright");
+    tl.from("#box-word", {duration:1, delay:13, autoAlpha:0}, "upright")
+    .from("#sweet-word", {duration:1, delay:13.5, autoAlpha:0}, "upright");
     tl.to("#piping-bag", {y:"+=100", ease:"none"});
     return tl;
 }
