@@ -1,9 +1,9 @@
 import { gsap } from "gsap";
-// import { GSDevTools } from "gsap/GSDevTools";
+import { GSDevTools } from "gsap/GSDevTools";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
-gsap.registerPlugin(MotionPathPlugin, MorphSVGPlugin);
+gsap.registerPlugin(GSDevTools, MotionPathPlugin, MorphSVGPlugin);
 gsap.set("#box", {y:"-=710", transformOrigin:"top"});
 gsap.set("#piping-bag", {x:"-=400", y:"-=620", scale:0.8});
 gsap.set("#thin-frosting-1", {y:"+=300"});
@@ -48,16 +48,16 @@ function thinfrostings(){
     .from("#thin-frosting-2-copy", {duration:0.05, autoAlpha:0}, "appear")
     .from("#thin-frosting-3-copy", {duration:0.05, autoAlpha:0}, "appear")
     .from("#thin-frosting-4-copy", {duration:0.05, autoAlpha:0}, "appear"); 
-    tl.to("#thin-frosting-1-copy", {duration:2, morphSVG:"#top-ribbon-right", stroke:"#fff", strokeWidth:10}, "morph")
-    .to("#thin-frosting-2-copy", {duration:2, morphSVG:"#bottom-ribbon-right", stroke:"#fff", strokeWidth:10}, "morph")
-    .to("#thin-frosting-3-copy", {duration:2, morphSVG:"#bottom-ribbon-left", stroke:"#fff", strokeWidth:10}, "morph")
-    .to("#thin-frosting-4-copy", {duration:2, morphSVG:"#top-ribbon-left", stroke:"#fff", strokeWidth:10}, "morph");
+    tl.to("#thin-frosting-1-copy", {duration:4.5, morphSVG:"#top-ribbon-right", stroke:"#fff", strokeWidth:10}, "morph")
+    .to("#thin-frosting-2-copy", {duration:4.5, morphSVG:"#bottom-ribbon-right", stroke:"#fff", strokeWidth:10}, "morph")
+    .to("#thin-frosting-3-copy", {duration:4.5, morphSVG:"#bottom-ribbon-left", stroke:"#fff", strokeWidth:10}, "morph")
+    .to("#thin-frosting-4-copy", {duration:4.5, morphSVG:"#top-ribbon-left", stroke:"#fff", strokeWidth:10}, "morph");
 }
 
 mainTL.add(TL())
 .add(thinfrostings())
 
-// GSDevTools.create();
+GSDevTools.create();
 MotionPathPlugin.create();
 MorphSVGPlugin.create(); 
 
