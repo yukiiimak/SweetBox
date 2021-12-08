@@ -13,11 +13,11 @@
         height: 100%;
     }
 
-    // g{
+    g{
 
-    //     // #box {
-    //     //     display: none;
-    //     // }
+        #box {
+            display: none;
+        }
 
     //     // #piping-bag {
     //     //     display: none;
@@ -98,5 +98,37 @@
     //     // #thin-frosting-motion-path-4-2 {
     //     //     display: none;
     //     // }
-    // }
+
+        #bottom-ribbon-right {
+            display: none;
+        }
+        
+        #bottom-ribbon-left {
+            display: none;
+        }
+
+        #top-ribbon-right {
+            display: none;
+        }
+
+        #top-ribbon-left {
+            display: none;
+        }
+
+        #thin-frosting-1-copy {
+            display: none;
+        }
+
+        #thin-frosting-2-copy {
+            display: none;
+        }
+
+        #thin-frosting-3-copy {
+            display: none;
+        }
+
+        #thin-frosting-4-copy {
+            display: none;
+        }
+    }
 }

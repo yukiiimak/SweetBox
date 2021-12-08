@@ -427,3 +427,30 @@ textarea {
   align-items: center;
   height: 100%;
 }
+#logoani g #box {
+  display: none;
+}
+#logoani g #bottom-ribbon-right {
+  display: none;
+}
+#logoani g #bottom-ribbon-left {
+  display: none;
+}
+#logoani g #top-ribbon-right {
+  display: none;
+}
+#logoani g #top-ribbon-left {
+  display: none;
+}
+#logoani g #thin-frosting-1-copy {
+  display: none;
+}
+#logoani g #thin-frosting-2-copy {
+  display: none;
+}
+#logoani g #thin-frosting-3-copy {
+  display: none;
+}
+#logoani g #thin-frosting-4-copy {
+  display: none;
+}
