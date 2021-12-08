@@ -40,6 +40,11 @@ function thinfrostings(){
     .to("#thin-frosting-2", {duration:0.05, alpha:0}, "disappear")
     .to("#thin-frosting-3", {duration:0.05, alpha:0}, "disappear")
     .to("#thin-frosting-4", {duration:0.05, alpha:0}, "disappear"); 
+    tl.from("#thin-frosting-1-copy", {duration:0.05, autoAlpha:0}, "appear")
+    .from("#thin-frosting-2-copy", {duration:0.05, autoAlpha:0}, "appear")
+    .from("#thin-frosting-3-copy", {duration:0.05, autoAlpha:0}, "appear")
+    .from("#thin-frosting-4-copy", {duration:0.05, autoAlpha:0}, "appear"); 
+
     // .to("#thin-frosting-1", {duration:2, morphSVG:"#top-ribbon-right", stroke:"#fff"}, "morph"); 
 //     .to("#thin-frosting-2", {duration:2, morphSVG:"#bottom-ribbon-right", stroke:"#fff"}, "morph")
 //     .to("#thin-frosting-3", {duration:2, morphSVG:"#bottom-ribbon-left", stroke:"#fff"}, "morph")
