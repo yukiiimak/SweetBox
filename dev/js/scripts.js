@@ -44,11 +44,10 @@ function thinfrostings(){
     .from("#thin-frosting-2-copy", {duration:0.05, autoAlpha:0}, "appear")
     .from("#thin-frosting-3-copy", {duration:0.05, autoAlpha:0}, "appear")
     .from("#thin-frosting-4-copy", {duration:0.05, autoAlpha:0}, "appear"); 
-
-    // .to("#thin-frosting-1", {duration:2, morphSVG:"#top-ribbon-right", stroke:"#fff"}, "morph"); 
-//     .to("#thin-frosting-2", {duration:2, morphSVG:"#bottom-ribbon-right", stroke:"#fff"}, "morph")
-//     .to("#thin-frosting-3", {duration:2, morphSVG:"#bottom-ribbon-left", stroke:"#fff"}, "morph")
-//     .to("#thin-frosting-4", {duration:2, morphSVG:"#top-ribbon-left", stroke:"#fff"}, "morph"); 
+    tl.to("#thin-frosting-1-copy", {duration:2, morphSVG:"#top-ribbon-right", stroke:"#fff", strokeWidth:10}, "morph")
+    .to("#thin-frosting-2-copy", {duration:2, morphSVG:"#bottom-ribbon-right", stroke:"#fff", strokeWidth:10}, "morph")
+    .to("#thin-frosting-3-copy", {duration:2, morphSVG:"#bottom-ribbon-left", stroke:"#fff", strokeWidth:10}, "morph")
+    .to("#thin-frosting-4-copy", {duration:2, morphSVG:"#top-ribbon-left", stroke:"#fff", strokeWidth:10}, "morph");
 }
 
 // for morphSVG: make copies of thin frosting and put them on top of box, fade away the originals while fading in the copies, and morph copies into ribbons
