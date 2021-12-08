@@ -5,7 +5,11 @@ import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
 gsap.registerPlugin(GSDevTools, MotionPathPlugin, MorphSVGPlugin);
 gsap.set("#box", {y:"-=710", transformOrigin:"top"});
-gsap.set("#piping-bag", {x:"-=400", y:"-=50", scale:0.8, transformOrigin:"center"});
+gsap.set("#piping-bag", {x:"-=400", y:"-=620", scale:0.8});
+gsap.set("#thin-frosting-1", {y:"+=300"});
+gsap.set("#thin-frosting-2", {y:"+=300"});
+gsap.set("#thin-frosting-3", {y:"+=300"});
+gsap.set("#thin-frosting-4", {y:"+=300"});
 
 const mainTL = gsap.timeline(); 
 
@@ -49,8 +53,6 @@ function thinfrostings(){
     .to("#thin-frosting-3-copy", {duration:2, morphSVG:"#bottom-ribbon-left", stroke:"#fff", strokeWidth:10}, "morph")
     .to("#thin-frosting-4-copy", {duration:2, morphSVG:"#top-ribbon-left", stroke:"#fff", strokeWidth:10}, "morph");
 }
-
-// for morphSVG: make copies of thin frosting and put them on top of box, fade away the originals while fading in the copies, and morph copies into ribbons
 
 mainTL.add(TL())
 .add(thinfrostings())
